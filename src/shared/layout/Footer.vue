@@ -17,7 +17,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Button from "../general/Button.vue";
+import Button from "@/shared/components/general/Button.vue";
 
 export default defineComponent({
   components: {

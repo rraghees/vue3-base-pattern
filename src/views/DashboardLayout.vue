@@ -11,9 +11,9 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
-import Footer from "../components/layout/Footer.vue";
-import Sidebar from "../components/layout/Sidebar.vue";
-import MobileSidebar from "../components/layout/MobileSidebar.vue";
+import Footer from "@/shared/layout/Footer.vue";
+import Sidebar from "@/shared/layout/Sidebar.vue";
+import MobileSidebar from "@/shared/layout/MobileSidebar.vue";
 
 const showSideBar = ref(false);
 </script>
