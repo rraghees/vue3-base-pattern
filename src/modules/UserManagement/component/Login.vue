@@ -66,7 +66,6 @@ const user = ref<IReqAuthModelDto>({
 const loading = ref(false);
 const onSubmit = async () => {
   let response = await AuthService.login(user.value);
-  console.log(response);
   authStore.setToken(response);
   router.push({ name: "Dashboard" });
 };
