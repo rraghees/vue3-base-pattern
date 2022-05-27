@@ -49,8 +49,8 @@
             flat
             color="primary"
             class="q-pa-xs"
-            @click="router.push({ name: 'Login' })"
             label="Login"
+            @click="router.push({ name: 'Login' })"
           />
         </div>
       </div>
@@ -77,8 +77,8 @@
             flat
             color="primary"
             class="q-pa-xs"
-            @click="onResendOTP"
             label="Resend OTP?"
+            @click="onResendOTP"
           />
         </div>
         <q-btn

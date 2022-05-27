@@ -21,7 +21,7 @@
         </q-item-section>
         <q-item-section class="text-white">Home</q-item-section>
       </q-item>
-      <q-item clickable @click="logOut" class="absolute-bottom">
+      <q-item clickable class="absolute-bottom" @click="logOut">
         <q-item-section avatar>
           <q-icon size="sm" name="logout" />
         </q-item-section>

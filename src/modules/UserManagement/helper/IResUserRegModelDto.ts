@@ -1,3 +1,1 @@
-export default interface IResUserRegModelDto {
-
-}
+export default interface IResUserRegModelDto {}

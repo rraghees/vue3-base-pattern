@@ -1,5 +1,5 @@
 export default interface IResAuthModelDto {
-    email: string;
-    name: string;
-    token: string;
+  email: string;
+  name: string;
+  token: string;
 }
