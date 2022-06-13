@@ -1,39 +1,34 @@
-import UserRoute from "@/views/UserRoute.vue";
 import { useState } from "@/store/auth/state";
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import Login from "@/modules/UserManagement/component/Login.vue";
-import Register from "@/modules/UserManagement/component/Register.vue";
-
-import DashboardLayout from "@/views/DashboardLayout.vue";
-import Home from "@/modules/Dashboard/component/Home.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/user",
     name: "User",
-    component: UserRoute,
+    component: () => import("@/modules/UserManagement/UserRoute.vue"),
     children: [
       {
         path: "register",
         name: "Register",
-        component: Register,
+        component: () =>
+          import("@/modules/UserManagement/component/Register.vue"),
       },
       {
         path: "login",
         name: "Login",
-        component: Login,
+        component: () => import("@/modules/UserManagement/component/Login.vue"),
       },
     ],
   },
   {
     path: "/",
     name: "Dashboard",
-    component: DashboardLayout,
+    component: () => import("@/modules/Dashboard/DashboardLayout.vue"),
     children: [
       {
         path: "/",
         name: "Home",
-        component: Home,
+        component: () => import("@/modules/Dashboard/component/Home.vue"),
         meta: {
           requireAuth: true,
         },

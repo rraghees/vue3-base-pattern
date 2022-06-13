@@ -48,8 +48,8 @@
 import { ref, computed } from "vue";
 import { useRouter } from "vue-router";
 import { useAuthStore } from "@/store/auth";
-import AuthService from "../helper/AuthService";
-import IReqAuthModelDto from "../helper/IReqAuthModelDto";
+import AuthService from "../AuthService";
+import IReqAuthModelDto from "../model/IReqAuthModelDto";
 
 const router = useRouter();
 const authStore = useAuthStore();

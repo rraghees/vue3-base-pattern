@@ -17,13 +17,4 @@ export const useState = defineStore({
       isAuthorized: false,
     };
   },
-  persist: {
-    enabled: true,
-    strategies: [
-      {
-        storage: localStorage,
-        paths: ["userInfo", "accessToken", "refreshToken", "isAuthorized"],
-      },
-    ],
-  },
 });

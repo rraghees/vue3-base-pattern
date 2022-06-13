@@ -44,10 +44,10 @@
     <template
       v-for="col in overrideColumns"
       :key="col.name"
-      #[col.templateName]="props"
+      #[col.templateName]="cols"
     >
-      <q-td dense :props="props">
-        <slot :name="col.name" :props="props"></slot>
+      <q-td dense :props="cols">
+        <slot :name="col.name" :props="cols"></slot>
       </q-td>
     </template>
   </q-table>

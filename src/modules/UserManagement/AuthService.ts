@@ -1,8 +1,8 @@
 import ApiService from "@/services/apiService";
-import IReqAuthModelDto from "./IReqAuthModelDto";
-import IResAuthModelDto from "./IResAuthModelDto";
-import IReqUserRegModelDto from "./IReqAuthModelDto";
-import IReqVerifyOTPModelDto from "./IReqVerifyOTPModelDto";
+import IReqAuthModelDto from "./model/IReqAuthModelDto";
+import IResAuthModelDto from "./model/IResAuthModelDto";
+import IReqUserRegModelDto from "./model/IReqAuthModelDto";
+import IReqVerifyOTPModelDto from "./model/IReqVerifyOTPModelDto";
 
 export default class AuthService {
   static baseUrl = ["user", "verifyOtp", "resendOtp", "login"];

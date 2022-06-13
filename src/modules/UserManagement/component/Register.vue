@@ -95,8 +95,8 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 import { useRouter } from "vue-router";
-import AuthService from "../helper/AuthService";
-import IReqUserRegModelDto from "../helper/IReqUserRegModelDto";
+import AuthService from "../AuthService";
+import IReqUserRegModelDto from "../model/IReqUserRegModelDto";
 
 const router = useRouter();
 
